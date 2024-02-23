@@ -1,8 +1,8 @@
-@import url();
+@import url('https://fonts.googleapis.com/css2?family=Jacquarda+Bastarda+9&display=swap');
 
 body{
-    background-color: rgba(137, 43, 226, 0.568);
+    background-color: hsla(271, 43%, 64%, 0.568);
 }
 
 li{
-    font-family:
+    font-family:Jacquarda Bastarda;}
