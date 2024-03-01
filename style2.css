@@ -7,5 +7,9 @@
     --botao-ativo: #3A375E;
     --botao-inativo: #3a375e80;
     --texto-fundo: #3a375e4d;
-    font-family:Dancing+Script
+    
+}
+
+body{
+    font-family:Dancing Script;
 }
