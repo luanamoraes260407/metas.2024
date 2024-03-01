@@ -1,4 +1,4 @@
-h1
+h1@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap')
   {color: #ff69b4;
 }
 :root {
@@ -8,4 +8,5 @@ h1
     --botao-ativo: #3A375E;
     --botao-inativo: #3a375e80;
     --texto-fundo: #3a375e4d;
+    font-family:Dancing+Script
 }
