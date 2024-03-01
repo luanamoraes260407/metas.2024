@@ -6,6 +6,6 @@ h1
     --verde: #1b750b;
     --branco: #FFFFFF;
     --botao-ativo: #3A375E;
-    --botao-inativo: rgba(58, 55, 94, 0.5);
-    --texto-fundo: rgba(58, 55, 94, 0.3);
+    --botao-inativo: #3a375e80;
+    --texto-fundo: #3a375e4d;
 }
