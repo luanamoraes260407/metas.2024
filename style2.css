@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
 
 :root {
-    --cor-de-fundo: #1E1E1E;
+    --cor-de-fundo: #1e1e1e;
     --verde: #df96ea;
     --branco: #ea1ed9;
     --botao-ativo: #9a23c5;
     --botao-inativo: #5e104d80;
-    --texto-fundo: #3a375e4d;
+    --texto-fundo: #d17bf44d;
 }
 
 body {
