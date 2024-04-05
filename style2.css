@@ -1,17 +1,18 @@
 :root {
-    --cor-de-fundo: #1e1e1e;
-    --verde: #df96ea;
-    --branco: #81267a;
-    --botao-ativo: #d488f0;
-    --botao-inativo: #5e104d80;
-    --texto-fundo: #4105584d;
+    --cor-de-fundo: #1E1E1E;
+    --verde: #6FFF57;
+    --branco: #FFFFFF;
+    --botao-ativo: #3A375E;
+    --botao-inativo: rgba(58, 55, 94, 0.5);
+    --texto-fundo: rgba(58, 55, 94, 0.3);
 }
 
 body {
     background-color: var(--cor-de-fundo);
     color: var(--branco);
-   
+    font-family: 'Chakra Petch', sans-serif;
 }
+
 
 .conteudo-principal {
     display: flex;
@@ -27,15 +28,15 @@ body {
     text-align: left;
     width: 100%;
     font-size: 32px;
-
 }
 
 .titulo-principal span {
     color: var(--verde);
 }
 
-.botao{
-    font-family: "Crakra Petch", sans-serif;
+
+.botao {
+    font-family: 'Chakra Petch', sans-serif;
     background-color: var(--botao-inativo);
     color: var(--branco);
     display: flex;
@@ -44,14 +45,17 @@ body {
     font-size: 18px;
     align-items: center;
     width: 100%;
-   
     border-bottom: 4px solid var(--botao-ativo);
     border-left: 2px solid var(--botao-ativo);
     border-right: 2px solid var(--botao-ativo);
     border-top: none;
 }
 
-.botoes{
+.botao:first-child {
+    border-radius: 40px 40px 0 0;
+}
+
+.botoes {
     display: block;
 }
 
@@ -60,19 +64,40 @@ body {
     border-bottom: 4px solid var(--verde);
 }
 
+.abas-textos{
+    background-color: var(--texto-fundo);
+    padding: 40px;
+    border-radius: 0 0 40px 40px;
+}
+.aba-conteudo.ativo{
+    display:block;
+}
 
-    @media screen and (min-width: 768px) {
-        .botoes {
-            display: flex;
-        }
+.aba-conteudo{
+    display: none;
+}
 
-        .botao:first-child {
-            border-radius: 40px 0 0 0;
-        }
+.aba-conteudo-titulo-principal{
+    font-size: 28px;
+    text-align: center;
+}
+.aba-conteudo-titulo-secundario{
+    text-align: center;
+    color: var(--verde);
+    text-transform: uppercase;
+}
 
-        .botao:last-child {
-            border-radius: 0 40px 0 0;
-        }
+
+@media screen and (min-width: 768px) {
+    .botoes {
+        display: flex;
     }
 
+    .botao:first-child {
+        border-radius: 40px 0 0 0;
+    }
 
+    .botao:last-child {
+        border-radius: 0 40px 0 0;
+    }
+}
