@@ -64,6 +64,20 @@ body {
     border-bottom: 4px solid var(--verde);
 }
 
+@media screen and (min-width: 768px) {
+    .botoes {
+        display: flex;
+    }
+
+    .botao:first-child {
+        border-radius: 40px 0 0 0;
+    }
+
+    .botao:last-child {
+        border-radius: 0 40px 0 0;
+    }
+}
+
 .abas-textos{
     background-color: var(--texto-fundo);
     padding: 40px;
@@ -88,16 +102,3 @@ body {
 }
 
 
-@media screen and (min-width: 768px) {
-    .botoes {
-        display: flex;
-    }
-
-    .botao:first-child {
-        border-radius: 40px 0 0 0;
-    }
-
-    .botao:last-child {
-        border-radius: 0 40px 0 0;
-    }
-}
