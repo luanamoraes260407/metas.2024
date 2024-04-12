@@ -13,25 +13,21 @@ for (let i = 0; i < botoes.length; i++) {
 }
 
 
-
+//cria as constante e a lista "tempo" dos objetivos ou metas
 const contadores = document.querySelectorAll("contador");
 const tempoObjetivo1 = new Date("2024-11-31T00:00:00");
 const tempoObjetivo2 = new Date("2024-12-31T00:00:00");
 const tempoObjetivo3 = new Date("2024-12-31T00:00:00");
 const tempoObjetivo4 = new Date("2024-12-31T00:00:00");
 
-
 const tempos = [tempoObjetivo1, tempoObjetivo2, tempoObjetivo3, tempoObjetivo4];]
-
-
-
 function calculaTempo(tempoObjetivo) {
-    let tempoAtual = new Date()
-    let tempoFinal = tempoObjetivo1 - tempoAtual;
-    let segundos = Math.floor(tempoFinal / 1000);
-    let minutos = Math.floor(segundos / 60);
-    let horas = Math.floor(minutos / 60);
-    let dias = Math.floor(horas / 24);
+    let tempoAtual = new Date(); // obtem a data atual 
+    let tempoFinal = tempoObjetivo1 - tempoAtual;// calcula o tempo final restante 
+    let segundos = Math.floor(tempoFinal / 1000); // calcula o segundos restantes
+    let minutos = Math.floor(segundos / 60); // calcula os segundos restantes
+    let horas = Math.floor(minutos / 60); // calcula os minutos restantes
+    let dias = Math.floor(horas / 24); // calcula os dias restantes
 
     contadores[0].textContent = calculaTempo(tempoObjetivo1);
 contadores[1].textContent = calculaTempo(tempoObjetivo2);
