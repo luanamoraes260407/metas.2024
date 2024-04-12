@@ -43,7 +43,7 @@ function calculaTempo(tempoObjetivo) {
     }
 
 }
-function comecaCrometro(){
+function comecaCronometro(){
     atualizandoCronometro();
     setInterval(atualizandoCronometro,1000);
 }
