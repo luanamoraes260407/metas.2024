@@ -20,7 +20,7 @@ const tempoObjetivo2 = new Date("2024-12-31T00:00:00");
 const tempoObjetivo3 = new Date("2024-12-31T00:00:00");
 const tempoObjetivo4 = new Date("2024-12-31T00:00:00");
 
-const tempos = [tempoObjetivo1, tempoObjetivo2, tempoObjetivo3, tempoObjetivo4];]
+const tempos = [tempoObjetivo1, tempoObjetivo2, tempoObjetivo3, tempoObjetivo4];
 function calculaTempo(tempoObjetivo) {
     let tempoAtual = new Date(); // obtem a data atual 
     let tempoFinal = tempoObjetivo1 - tempoAtual;// calcula o tempo final restante 
@@ -29,27 +29,18 @@ function calculaTempo(tempoObjetivo) {
     let horas = Math.floor(minutos / 60); // calcula os minutos restantes
     let dias = Math.floor(horas / 24); // calcula os dias restantes
 
-    contadores[0].textContent = calculaTempo(tempoObjetivo1);
-contadores[1].textContent = calculaTempo(tempoObjetivo2);
-contadores[2].textContent = calculaTempo(tempoObjetivo3);
-contadores[3].textContent = calculaTempo(tempoObjetivo4);
-
-const tempos = [tempoObjetivo1,tempoObjetivo2,tempoObjetivo3,tempoObjetivo4];
-
-contadores [i]. texContent + calculaTempo (tempos[i]);
-
     segundos %= 60;
     minutos %= 60;
     horas %= 24;
 
-    contadores[0].textContent = dias + " dias " + horas + " horas " +
+    return dias + " dias " + horas + " horas " +
         minutos + " minutos " + segundos + " segundos ";
-
-        function atualizandoCronometro({
+}
+        function atualizandoCronometro(){
             for (let i = 0; i <contadores.length; i++){
-                contadores [i].textContent = calculaTempo(tempo[i]);
+                contadores[i].textContent = calculaTempo(tempo[i]);
         
-    //}
+    }
 
 }
 function comecaCrometro(){
