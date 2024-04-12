@@ -42,7 +42,7 @@ function calculaTempo(tempoObjetivo) {
 }
 //cria uma função com laço 
 
- para interagir com todos os objetivos
+ //para interagir com todos os objetivos
 
 function atualizaCronometro(){
     for (let i = 0; i < contadores.length; i++){
