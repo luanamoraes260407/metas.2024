@@ -23,7 +23,7 @@ const tempoObjetivo4 = new Date("2024-12-31T00:00:00");
 const tempos = [tempoObjetivo1, tempoObjetivo2, tempoObjetivo3, tempoObjetivo4];
 function calculaTempo(tempoObjetivo) {
     let tempoAtual = new Date(); // obtem a data atual 
-    let tempoFinal = tempoObjetivo1 - tempoAtual;// calcula o tempo final restante 
+    let tempoFinal = tempoObjetivo - tempoAtual;// calcula o tempo final restante 
     let segundos = Math.floor(tempoFinal / 1000); // calcula o segundos restantes
     let minutos = Math.floor(segundos / 60); // calcula os segundos restantes
     let horas = Math.floor(minutos / 60); // calcula os minutos restantes
