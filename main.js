@@ -40,9 +40,6 @@ function calculaTempo(tempoObjetivo) {
             return " PRAZO ENCERRADO!!! "
         }
 }
-//cria uma função com laço 
-
- //para interagir com todos os objetivos
 
 function atualizaCronometro(){
     for (let i = 0; i < contadores.length; i++){
@@ -55,4 +52,4 @@ function comecaCronometro(){
     atualizaCronometro();
     setInterval(atualizaCronometro, 1000);
 }
-//comecaCronometro();
+comecaCronometro();
